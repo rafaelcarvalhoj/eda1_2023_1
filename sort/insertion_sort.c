@@ -8,7 +8,7 @@ void insertion_sort(TYPE data[], int l,int r)
 	while(i <= r)
     {   if(LESS(data[i],data[i-1]))
 		{	int j = i; TYPE v = data[i];
-			while(LESS(v,data[j-1]))
+			while(j >= l && LESS(v,data[j-1]))
 				{SWAP(data[j-1],data[j]); j--;}
 		}
 		i++;}
