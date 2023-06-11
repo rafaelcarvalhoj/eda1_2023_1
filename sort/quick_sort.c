@@ -27,7 +27,7 @@ int partitionRibasNIP(TYPE a[], int l, int r)
         a[i++] = bigger[j];
     
     free(smaller);
-    free(bigger);sssssssss
+    free(bigger);
     return pivot_position;
 }
 
