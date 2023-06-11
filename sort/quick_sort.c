@@ -27,19 +27,24 @@ int partitionRibasNIP(TYPE a[], int l, int r)
         a[i++] = bigger[j];
     
     free(smaller);
-    free(bigger);
+    free(bigger);sssssssss
     return pivot_position;
 }
 
 int partitionRafael(TYPE a[], int l, int r){
     TYPE pivot = a[r];
-    int pivot_position;
+    int i=l , j=r+1;
+    while(i < j)
+    {   while(a[++i]<=pivot && i < r);
+        while(a[--j]>pivot && j > l);
+        if(i < j) exch(a[i],a[j]);
+    }
+    exch(a[r],a[j]);
+    return j;
 }
 
-
-int partition(TYPE a[], int l, int r)
-{	int i = l-1, j = r; TYPE v = a[r];
-
+int partitionCormem(int a[], int l, int r){
+    
 }
 
 void quicksort(TYPE a[], int l, int r);
