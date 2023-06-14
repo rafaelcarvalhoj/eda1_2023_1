@@ -24,6 +24,7 @@ void stable_selection_sort(TYPE data[], int l, int r){
         }
     }
 }
+
 int main(void)
 {   TYPE vec[VEC_SIZE]; int i = 0;
     while(scanf("%d",&vec[i++])!=EOF); 
