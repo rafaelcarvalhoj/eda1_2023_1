@@ -24,7 +24,7 @@ void shell_sort(TYPE v[], int l, int r)
     {   //insertion_sortH(v, l , r, h);
         for(int i = l+h; i <= r; i++)
             for(int j = i;j>=l+h && less(v[j], v[j-h]);j-=h)
-                exch(v[j], v[j-h])
+                exch(v[j], v[j-h]);
     }
 }
 

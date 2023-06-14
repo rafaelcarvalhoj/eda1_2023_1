@@ -1,4 +1,4 @@
-o#include <stdio.h>
+#include <stdio.h>
 typedef int TYPE;
 #define VEC_SIZE 50000
 #define key(A) (A)
