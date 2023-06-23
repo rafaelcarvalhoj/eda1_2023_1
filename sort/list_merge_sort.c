@@ -10,7 +10,7 @@ struct node {
 //merge de duas listas
 link merge(link a, link b){
     struct node new_head;
-    link p_head = new_head;
+    link p_head = &new_head;
     while(a!=NULL && b!=NULL){
         if(a->data < b->data){
             p_head->next = a;
@@ -30,9 +30,4 @@ link merge(link a, link b){
         p_head->next = b;
     }
     return new_head->next;
-}
-
-
-int main(void){
-
 }
