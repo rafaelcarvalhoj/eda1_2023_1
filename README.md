@@ -4,18 +4,18 @@ Este repositório possui alguns códigos desenvolvidos durante a matéria de Est
 ### Plano de Ensino:
 Princípios da análise de algoritmos
 ```
-    Complexidade computacional
-    Análise assintótica: notação Big-O
+Complexidade computacional
+Análise assintótica: notação Big-O
 
 ```
 Recursão
 ```
-    Algoritmos recursivos
-    Método da divisão e conquista
+Algoritmos recursivos
+Método da divisão e conquista
 ```
 Estrutura de dados
 ```
-lementares (lineares)
+Elementares (lineares)
     arrays e listas
     listas encadeadas
 Tipos abstratos de dados
@@ -25,21 +25,21 @@ Tipos abstratos de dados
 ```
 Algoritmos de ordenação
 ```
-    Métodos elementares
-        Selection Sort
-        Insertion Sort
-        Bubble Sort
-    Quicksort
-    Mergesort
-    Filas de prioridades e heapsort
-    Radix sorting.
+Métodos elementares
+    Selection Sort
+    Insertion Sort
+    Bubble Sort
+Quicksort
+Mergesort
+Filas de prioridades e heapsort
+Radix sorting.
 ```
 Algoritmos de busca
 ```
-    Tabela de símbolos
-    Busca binária
-    Árvores de busca binária
-    Tabela Hash
+Tabela de símbolos
+Busca binária
+Árvores de busca binária
+Tabela Hash
 ```
 
 Referências biliográficas:
