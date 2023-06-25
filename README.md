@@ -1,7 +1,7 @@
-#Algoritmos e Estrutura de Dados 1 - UnB
+# Algoritmos e Estrutura de Dados 1 - UnB
 Este repositório possui alguns códigos desenvolvidos durante a matéria de Estrutura de Dados e Algoritmos ministrado pela Professora Rose Shimizu.
 
-###Plano de Ensino:
+### Plano de Ensino:
 Princípios da análise de algoritmos
 ```
     Complexidade computacional;
@@ -44,5 +44,7 @@ Algoritmos de busca
 
 Referências biliográficas:
 `Robert Sedgewick Algorithms in C, Addison Wesley, 3nd ed`
+
 `https://www.ime.usp.br/~pf/algoritmos/index.html#C-language`
+
 `https://www.brunoribas.com.br/`
