@@ -47,3 +47,14 @@ Item PQdelMax(){
     PQfixDown(1, N-1);
     return pq[N--];
 }
+
+void heap_sort(Item *v, int l, int r){//don't uses the 1th position on the vector
+    //We don't need to init PQ because we are going to reference pq to v
+    pq = v+l-1;
+    N = r-l+1;
+    for(int k = N/2; k>=1;k--) PQfixDown(k, N);
+    while(N>1){
+        exch(pq[1],pq[N]);
+        PQfixDown(1, --N);
+    }
+}
