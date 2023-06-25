@@ -31,8 +31,8 @@ int partitionRibasNIP(TYPE a[], int l, int r)
     return pivot_position;
 }
 
-int partitionRafael(TYPE a[], int l, int r){
-    TYPE pivot = a[r];
+int partitionRafael(TYPE a[], int l, int r)
+{   TYPE pivot = a[r];
     int i=l , j=r+1;
     while(i < j)
     {   while(a[++i]<=pivot && i < r);
