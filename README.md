@@ -4,8 +4,8 @@ Este repositório possui alguns códigos desenvolvidos durante a matéria de Est
 ### Plano de Ensino:
 Princípios da análise de algoritmos
 ```
-    Complexidade computacional;
-    Análise assintótica: notação Big-O.
+    Complexidade computacional
+    Análise assintótica: notação Big-O
 
 ```
 Recursão
@@ -15,9 +15,9 @@ Recursão
 ```
 Estrutura de dados
 ```
-lementares (lineares):
-    arrays e listas;
-    listas encadeadas.
+lementares (lineares)
+    arrays e listas
+    listas encadeadas
 Tipos abstratos de dados
     Filas
     Pilhas
@@ -25,13 +25,13 @@ Tipos abstratos de dados
 ```
 Algoritmos de ordenação
 ```
-    Métodos elementares:
-        Selection Sort;
-        Insertion Sort;
-        Bubble Sort;
-    Quicksort;
-    Mergesort;
-    Filas de prioridades e heapsort;
+    Métodos elementares
+        Selection Sort
+        Insertion Sort
+        Bubble Sort
+    Quicksort
+    Mergesort
+    Filas de prioridades e heapsort
     Radix sorting.
 ```
 Algoritmos de busca
@@ -43,6 +43,7 @@ Algoritmos de busca
 ```
 
 Referências biliográficas:
+
 `Robert Sedgewick Algorithms in C, Addison Wesley, 3nd ed`
 
 `https://www.ime.usp.br/~pf/algoritmos/index.html#C-language`
