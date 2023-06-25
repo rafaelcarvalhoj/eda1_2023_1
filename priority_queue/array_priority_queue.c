@@ -25,7 +25,7 @@ void PQfixUp(int k){
     }
 }
 
-void PQfixDown(int k, n){
+void PQfixDown(int k, int n){
     int j;
     while(2*k < n){
         j = k*2;
@@ -38,7 +38,7 @@ void PQfixDown(int k, n){
 
 void PQinsert(int k){
     pq[N++] = k;
-    PQfixupUp(N);
+    PQfixUp(N);
 }
 
 Item PQdelMax(){
