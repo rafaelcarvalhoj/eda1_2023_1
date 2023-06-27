@@ -78,9 +78,9 @@ void quick_sort(TYPE a[], int l, int r){
 void quick_sort_RM3(TYPE a[], int l, int r){// 10|20% better
     if(r<=l) return;
 
-    compexch(v[l], v[(l+r)/2]);
-    compexch(v[l], v[r]);
-    compexch(v[r], v[(l+r)/2]);
+    compexch(a[l], a[(l+r)/2]);
+    compexch(a[l], a[r]);
+    compexch(a[r], a[(l+r)/2]);
 
     int p = partitionSedgewick(a, l, r);
 
