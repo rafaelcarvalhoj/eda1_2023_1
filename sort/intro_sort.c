@@ -29,10 +29,10 @@ void merge_sort(TYPE *v, int l, int r)
 int partitionSedgewick(TYPE a[], int l, int r){
     int i = l-1, j = r, piviot = a[r];
     for(;;){
-        while(v[--i]<piviot);//finding the element for the right partition
-        while(piviot<v[--j]) if(j==l) break; //already sorted
+        while(a[--i]<piviot);//finding the element for the right partition
+        while(piviot<a[--j]) if(j==l) break; //already sorted
         if(i>=j) break;
-        exch(v[i],v[j]);
+        exch(a[i],a[j]);
     }
 
     return j;
@@ -41,9 +41,9 @@ int partitionSedgewick(TYPE a[], int l, int r){
 void quick_sort_RM3(TYPE a[], int l, int r){// 10|20% better
     if(r<=l) return;
 
-    compexch(v[l], v[(l+r)/2]);
-    compexch(v[l], v[r]);
-    compexch(v[r], v[(l+r)/2]);
+    compexch(a[l], a[(l+r)/2]);
+    compexch(a[l], a[r]);
+    compexch(a[r], a[(l+r)/2]);
 
     int p = partitionSedgewick(a, l, r);
 
@@ -53,13 +53,15 @@ void quick_sort_RM3(TYPE a[], int l, int r){// 10|20% better
 
 void insertion_sort(TYPE data[], int l,int r)
 {   int i = l+1;
-	while(i <= r)
-    {   if(LESS(data[i],data[i-1]))
-		{	int j = i; TYPE v = data[i];
-			while(j >= l && LESS(v,data[j-1]))
-				{SWAP(data[j-1],data[j]); j--;}
+	while(i <= r){   
+        if(less(data[i],data[i-1])){	
+            int j = i; TYPE v = data[i];
+			while(j >= l && less(v,data[j-1])){
+                exch(data[j-1],data[j]); j--;
+            }
 		}
-		i++;}
+		i++;
+        }
 }
 
 
@@ -71,10 +73,16 @@ void intro_sort(TYPE a[], int l, int r, int maxDepth){
         merge_sort(a, l ,r);
     }
     else{
+        compexch(a[l], a[(l+r)/2]);
+        compexch(a[l], a[r]);
+        compexch(a[r], a[(l+r)/2]);
 
+        int p = partitionSedgewick(a, l, r);
+        intro_sort(a, l, p-1, maxDepth-1);
+        intro_sort(a, p+1, r, maxDepth-1);
     }
 
-}
+}   
 
 
 void intro(TYPE a[], int l, int r){
